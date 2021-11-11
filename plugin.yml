@@ -1,0 +1,17 @@
+name: Payload
+main: payload.main.Payload
+version: 1.0
+api-version: 1.13
+commands:
+  payload:
+    description: Access the plugin's commands
+    usage: /payload
+permissions:
+  payload.player:
+   description: Allows basic commands
+   default: op
+  payload.admin:
+   description: Allows admin commands
+   default: op
+   children:
+     payload.player: true
